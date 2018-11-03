@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
 
+## Dev machine setup
+
+https://angular.io/cli
+`npm install -g @angular/cli`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -21,6 +26,12 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Adding components using blueprints
+
+`ng generate <blueprint> <options>`
+
+`ng generate component product`
 
 ## Further help
 
