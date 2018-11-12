@@ -1,11 +1,19 @@
-<p>
+<div>
   samples works!
-  <mat-menu #appMenu="matMenu">
-    <button mat-menu-item>Settings</button>
-    <button mat-menu-item>Help</button>
-  </mat-menu>
+  <div>
+    <mat-checkbox>
+      Check me!
+    </mat-checkbox>
+  </div>
+  <div>
+    <mat-menu #appMenu="matMenu">
+      <button mat-menu-item>Settings</button>
+      <button mat-menu-item>Help</button>
+    </mat-menu>
+  </div>
 
   <button mat-icon-button [matMenuTriggerFor]="appMenu">
     <mat-icon>more vertical menu</mat-icon>
   </button>
-</p>
+
+</div>
