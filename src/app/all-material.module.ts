@@ -1,8 +1,10 @@
-import {DragDropModule} from '@angular/cdk/drag-drop';
-import {ScrollingModule} from '@angular/cdk/scrolling';
-import {CdkTableModule} from '@angular/cdk/table';
-import {CdkTreeModule} from '@angular/cdk/tree';
-import {NgModule} from '@angular/core';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { CdkTableModule } from '@angular/cdk/table';
+import { CdkTreeModule } from '@angular/cdk/tree';
+import { NgModule } from '@angular/core';
+import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+import 'hammerjs/hammer';
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -39,9 +41,11 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
+  GestureConfig,
 } from '@angular/material';
 
 @NgModule({
+  providers: [{ provide: HAMMER_GESTURE_CONFIG, useClass: GestureConfig }],
   exports: [
     CdkTableModule,
     CdkTreeModule,
@@ -84,7 +88,7 @@ import {
     ScrollingModule,
   ]
 })
-export class AllMaterialModule {}
+export class AllMaterialModule { }
 
 
 /**  Copyright 2018 Google Inc. All Rights Reserved.
